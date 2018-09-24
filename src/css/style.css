@@ -1,0 +1,66 @@
+.game {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.game > div{
+    display: inline-block;
+    position: relative;
+}
+
+.board {
+    margin : 25px;
+    text-align: center;
+    padding-right: 3px;
+}
+
+.board div {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.board :nth-child(3n) > td{
+    padding-bottom: 2px;
+}
+
+.board td:nth-child(3n) {
+    padding-right: 2px;
+}
+
+.square, .sketch {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 0;
+}
+
+.square {
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    caret-color: transparent;
+}
+
+.sketch {
+    padding-top: 2px;
+    padding-left: 6px;
+    text-align: left;
+    vertical-align: top;
+    background-color: transparent;
+    font-size: 8px;
+    color: lightgrey;
+    pointer-events: none;
+}
+
+.history {
+    display: inline-block;
+    margin: 25px;
+    vertical-align: top;
+}
+
+.history span {
+    line-height: 25px;
+}
